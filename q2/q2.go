@@ -26,17 +26,17 @@ func CalculateTotalSalary(employee *Employee) (float64, error) {
 		return 0, errors.New("Está vasio")
 	}
 
-	var x, soma float64
-	
-	for i := 0; i >= len(employee.Bonuses); i++ {
-		soma += employee.Bonuses[i]
+	var soma float64
+
+	for i := 0; i < len(employee.Bonuses); i++ {
+		soma = employee.Bonuses[i] + soma
 	}
 
-		x = soma + employee.BaseSalary  
-		
+		x := soma + employee.BaseSalary
+
 		if  soma > 1500 {
-			employee.Title = "Senior"
+			employee.Title = "Senior " + employee.Title
 		}
 
- return x,nil
+			return x, nil
 }
