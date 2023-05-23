@@ -1,3 +1,5 @@
+package q2
+
 import (
 	"errors"
 	"fmt"
