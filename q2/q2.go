@@ -2,7 +2,6 @@ package q2
 
 import (
 	"errors"
-	"fmt"
 )
 
 //Você é um desenvolvedor de software em uma empresa financeira e está trabalhando em um sistema de folha de pagamento.
